@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Box Shadow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Box Shadow</h1>
+    
+    <div class="controls">
+      <label for="h-offset">Deslocamento Horizontal (px):</label>
+      <input type="number" id="h-offset" value="10">
+
+      <label for="v-offset">Deslocamento Vertical (px):</label>
+      <input type="number" id="v-offset" value="10">
+
+      <label for="blur">Desfoque (px):</label>
+      <input type="number" id="blur" value="10">
+
+      <label for="spread">Espalhamento (px):</label>
+      <input type="number" id="spread" value="0">
+
+      <label for="color">Cor:</label>
+      <input type="color" id="color" value="#000000">
+
+      <label for="inset">Inset:</label>
+      <input type="checkbox" id="inset">
+    </div>
+
+    <div class="preview">
+      <div id="box" class="box">
+        Box com Box Shadow
+      </div>
+    </div>
+
+    <div class="output">
+      <label for="css-output">Código CSS:</label>
+      <textarea id="css-output" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
